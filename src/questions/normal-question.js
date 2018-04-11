@@ -1,30 +1,28 @@
+const chalk = require('chalk');
 const words = require('../data/dutch-english');
-const inquirer = require('inquirer');
-const {choose, capitalize} = require('../util');
+const formatQuestion = require('./format-question');
+const {choose, capitalize, input} = require('../util');
 
 module.exports = (fromLanguage, toLanguage) =>
   async ({wordSelectionFn = choose, set = words, score = [0, 0], questionCounter = null}) => {
     const pair = wordSelectionFn(set);
-    const qWord = pair[fromLanguage];
-    const aWord = pair[toLanguage];
+    const questionWord = pair[fromLanguage];
+    const answerWords = words
+      .filter(wp => wp[fromLanguage] === questionWord)
+      .map(wp => wp[toLanguage]);
 
-    const counterStr = typeof questionCounter === 'number'
-      ? `(${questionCounter}) `
-      : '';
-    const scoreStr = `Score: ${score.join('/')}`;
+    const question = formatQuestion(questionCounter, score, fromLanguage, toLanguage, questionWord);
+    const res = await input(question);
 
-    const question = `${counterStr}${scoreStr}\n[${capitalize(fromLanguage)} -> ${capitalize(toLanguage)}] ${qWord}`;
-    const res = await inquirer.prompt([{
-      type: 'input',
-      message: question,
-      name: 'res'
-    }]).then(answers => answers.res);
+    const wordIsStr = answerWords.length === 1
+      ? chalk.bold(`"${questionWord}" in ${capitalize(toLanguage)} is "${answerWords[0]}"`)
+      : chalk.bold(`"${questionWord}" in ${capitalize(toLanguage)} can be: ${answerWords.map(w => `"${w}"`).join(', ')}`);
 
-    if (res.trim() === aWord) {
-      console.log(`✅  Correct! ${qWord} in ${capitalize(toLanguage)} is ${aWord}`);
+    if (answerWords.includes(res.trim())) {
+      console.log(`✅  Correct!\n${wordIsStr}\n`);
       return true;
-    } else {
-      console.log(`❌  Incorrect! ${qWord} in ${capitalize(toLanguage)} is ${aWord}`);
-      return false;
     }
+
+    console.log(`❌  Incorrect!\n${wordIsStr}\n`);
+    return false;
   };
