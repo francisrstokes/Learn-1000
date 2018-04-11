@@ -57,7 +57,7 @@ module.exports = [
   },
   {
     "dutch": "hebben",
-    "english": "having"
+    "english": "have"
   },
   {
     "dutch": "deze",
@@ -197,7 +197,7 @@ module.exports = [
   },
   {
     "dutch": "vertellen",
-    "english": "telling"
+    "english": "tell"
   },
   {
     "dutch": "doet",
@@ -213,7 +213,7 @@ module.exports = [
   },
   {
     "dutch": "willen",
-    "english": "wanting"
+    "english": "want"
   },
   {
     "dutch": "lucht",
@@ -229,7 +229,7 @@ module.exports = [
   },
   {
     "dutch": "spelen",
-    "english": "playing"
+    "english": "play"
   },
   {
     "dutch": "klein",
@@ -241,7 +241,7 @@ module.exports = [
   },
   {
     "dutch": "zetten",
-    "english": "putting"
+    "english": "put"
   },
   {
     "dutch": "thuis",
@@ -249,7 +249,7 @@ module.exports = [
   },
   {
     "dutch": "lezen",
-    "english": "reading"
+    "english": "read"
   },
   {
     "dutch": "de hand",
@@ -301,7 +301,7 @@ module.exports = [
   },
   {
     "dutch": "volgen",
-    "english": "following"
+    "english": "follow"
   },
   {
     "dutch": "act",
@@ -313,7 +313,7 @@ module.exports = [
   },
   {
     "dutch": "vragen",
-    "english": "asking"
+    "english": "ask"
   },
   {
     "dutch": "mannen",
@@ -321,7 +321,7 @@ module.exports = [
   },
   {
     "dutch": "verandering",
-    "english": "changing"
+    "english": "change"
   },
   {
     "dutch": "ging",
@@ -341,7 +341,7 @@ module.exports = [
   },
   {
     "dutch": "nodig hebben",
-    "english": "needing"
+    "english": "need"
   },
   {
     "dutch": "huis",
@@ -353,7 +353,7 @@ module.exports = [
   },
   {
     "dutch": "proberen",
-    "english": "trying"
+    "english": "try"
   },
   {
     "dutch": "ons",
@@ -385,7 +385,7 @@ module.exports = [
   },
   {
     "dutch": "bouwen",
-    "english": "building"
+    "english": "build"
   },
   {
     "dutch": "zelf",
@@ -417,11 +417,11 @@ module.exports = [
   },
   {
     "dutch": "nemen",
-    "english": "taking"
+    "english": "take"
   },
   {
     "dutch": "krijgen",
-    "english": "getting"
+    "english": "get"
   },
   {
     "dutch": "plaats",
@@ -433,7 +433,7 @@ module.exports = [
   },
   {
     "dutch": "wonen",
-    "english": "living"
+    "english": "live"
   },
   {
     "dutch": "waar",
@@ -489,7 +489,7 @@ module.exports = [
   },
   {
     "dutch": "geven",
-    "english": "giving"
+    "english": "give"
   },
   {
     "dutch": "onze",
@@ -529,15 +529,15 @@ module.exports = [
   },
   {
     "dutch": "denken",
-    "english": "thinking"
+    "english": "think"
   },
   {
     "dutch": "zeggen",
-    "english": "saying"
+    "english": "say"
   },
   {
     "dutch": "helpen",
-    "english": "helping"
+    "english": "help"
   },
   {
     "dutch": "laag",
@@ -549,7 +549,7 @@ module.exports = [
   },
   {
     "dutch": "verschillen",
-    "english": "differing"
+    "english": "differ"
   },
   {
     "dutch": "beurt",
@@ -565,7 +565,7 @@ module.exports = [
   },
   {
     "dutch": "betekenen",
-    "english": "meaning"
+    "english": "mean"
   },
   {
     "dutch": "voor",
@@ -617,7 +617,7 @@ module.exports = [
   },
   {
     "dutch": "gebruiken",
-    "english": "using"
+    "english": "use"
   },
   {
     "dutch": "uw",
@@ -645,7 +645,7 @@ module.exports = [
   },
   {
     "dutch": "schrijven",
-    "english": "writing"
+    "english": "write"
   },
   {
     "dutch": "zou",
@@ -673,7 +673,7 @@ module.exports = [
   },
   {
     "dutch": "maken",
-    "english": "making"
+    "english": "make"
   },
   {
     "dutch": "ding",
@@ -681,7 +681,7 @@ module.exports = [
   },
   {
     "dutch": "zien",
-    "english": "seeing"
+    "english": "see"
   },
   {
     "dutch": "hem",
@@ -697,7 +697,7 @@ module.exports = [
   },
   {
     "dutch": "kijken",
-    "english": "looking"
+    "english": "look"
   },
   {
     "dutch": "meer",
@@ -717,7 +717,7 @@ module.exports = [
   },
   {
     "dutch": "komen",
-    "english": "coming"
+    "english": "come"
   },
   {
     "dutch": "deed",
@@ -729,7 +729,7 @@ module.exports = [
   },
   {
     "dutch": "klinken",
-    "english": "sounding"
+    "english": "sound"
   },
   {
     "dutch": "geen",
@@ -753,7 +753,7 @@ module.exports = [
   },
   {
     "dutch": "weten",
-    "english": "knowing"
+    "english": "know"
   },
   {
     "dutch": "water",
@@ -797,7 +797,7 @@ module.exports = [
   },
   {
     "dutch": "vinden",
-    "english": "finding"
+    "english": "find"
   },
   {
     "dutch": "hoofd",
@@ -805,7 +805,7 @@ module.exports = [
   },
   {
     "dutch": "staan",
-    "english": "standing"
+    "english": "stand"
   },
   {
     "dutch": "eigen",
@@ -837,7 +837,7 @@ module.exports = [
   },
   {
     "dutch": "groeien",
-    "english": "growing"
+    "english": "grow"
   },
   {
     "dutch": "studie",
@@ -849,11 +849,11 @@ module.exports = [
   },
   {
     "dutch": "leren",
-    "english": "learning"
+    "english": "learn"
   },
   {
     "dutch": "planten",
-    "english": "planting"
+    "english": "plant"
   },
   {
     "dutch": "afdekking",
@@ -897,7 +897,7 @@ module.exports = [
   },
   {
     "dutch": "laten",
-    "english": "letting"
+    "english": "let"
   },
   {
     "dutch": "gedachte",
@@ -949,7 +949,7 @@ module.exports = [
   },
   {
     "dutch": "tekenen",
-    "english": "drawing"
+    "english": "draw"
   },
   {
     "dutch": "links",
@@ -961,7 +961,7 @@ module.exports = [
   },
   {
     "dutch": "lopen",
-    "english": "walking"
+    "english": "walk"
   },
   {
     "dutch": "niet",
@@ -1005,7 +1005,7 @@ module.exports = [
   },
   {
     "dutch": "dragen",
-    "english": "carrying"
+    "english": "carry"
   },
   {
     "dutch": "nam",
@@ -1073,7 +1073,7 @@ module.exports = [
   },
   {
     "dutch": "kijken",
-    "english": "watching"
+    "english": "watch"
   },
   {
     "dutch": "kleur",
@@ -1125,7 +1125,7 @@ module.exports = [
   },
   {
     "dutch": "lopen",
-    "english": "walking"
+    "english": "walk"
   },
   {
     "dutch": "voorbeeld",
@@ -1377,7 +1377,7 @@ module.exports = [
   },
   {
     "dutch": "passeren",
-    "english": "passing"
+    "english": "pass"
   },
   {
     "dutch": "sinds",
@@ -1569,7 +1569,7 @@ module.exports = [
   },
   {
     "dutch": "brengen",
-    "english": "bringing"
+    "english": "bring"
   },
   {
     "dutch": "ja",
@@ -1625,15 +1625,15 @@ module.exports = [
   },
   {
     "dutch": "vallen",
-    "english": "falling"
+    "english": "fall"
   },
   {
     "dutch": "leiden",
-    "english": "leading"
+    "english": "lead"
   },
   {
     "dutch": "huilen",
-    "english": "crying"
+    "english": "cry"
   },
   {
     "dutch": "donker",
@@ -1649,11 +1649,11 @@ module.exports = [
   },
   {
     "dutch": "wachten",
-    "english": "waiting"
+    "english": "wait"
   },
   {
     "dutch": "plannen",
-    "english": "planning"
+    "english": "plan"
   },
   {
     "dutch": "figuur",
@@ -1789,7 +1789,7 @@ module.exports = [
   },
   {
     "dutch": "produceren",
-    "english": "producing"
+    "english": "produce"
   },
   {
     "dutch": "feit",
@@ -1833,7 +1833,7 @@ module.exports = [
   },
   {
     "dutch": "onthouden",
-    "english": "remembering"
+    "english": "remember"
   },
   {
     "dutch": "stap",
@@ -1845,7 +1845,7 @@ module.exports = [
   },
   {
     "dutch": "houden",
-    "english": "holding"
+    "english": "hold"
   },
   {
     "dutch": "west",
@@ -1877,7 +1877,7 @@ module.exports = [
   },
   {
     "dutch": "luisteren",
-    "english": "listening"
+    "english": "listen"
   },
   {
     "dutch": "zes",
@@ -1889,7 +1889,7 @@ module.exports = [
   },
   {
     "dutch": "reizen",
-    "english": "travelling"
+    "english": "travell"
   },
   {
     "dutch": "minder",
@@ -1925,7 +1925,7 @@ module.exports = [
   },
   {
     "dutch": "leggen",
-    "english": "laying"
+    "english": "lay"
   },
   {
     "dutch": "tegen",
@@ -1957,11 +1957,11 @@ module.exports = [
   },
   {
     "dutch": "dienen",
-    "english": "serving"
+    "english": "serve"
   },
   {
     "dutch": "verschijnen",
-    "english": "appearing"
+    "english": "appear"
   },
   {
     "dutch": "weg",
@@ -1981,7 +1981,7 @@ module.exports = [
   },
   {
     "dutch": "regeren",
-    "english": "governing"
+    "english": "govern"
   },
   {
     "dutch": "trek",
@@ -2049,7 +2049,7 @@ module.exports = [
   },
   {
     "dutch": "tellen",
-    "english": "counting"
+    "english": "count"
   },
   {
     "dutch": "square",
