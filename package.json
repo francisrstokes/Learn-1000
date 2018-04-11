@@ -9,5 +9,6 @@
   "author": "Francis Stokes",
   "license": "ISC",
   "dependencies": {
+    "inquirer": "^5.2.0"
   }
 }

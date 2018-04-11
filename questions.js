@@ -1,46 +1,62 @@
 const words = require('./dutch-english');
-const {choose} = require('./util');
+const {choose, capitalize} = require('./util');
+const inquirer = require('inquirer');
 
-module.exports = rl => {
-  const questionPromise = (q) =>
-    new Promise(resolve => rl.question(q, resolve))
+const normalQuestion = (fromLanguage, toLanguage) =>
+  async (set = words, score = [0, 0], questionCounter = null) => {
+    const pair = choose(set);
+    const qWord = pair[fromLanguage];
+    const aWord = pair[toLanguage];
 
-  const englishToDutch = async () => {
-    const pair = choose(words);
-    const qWord = pair.english;
-    const aWord = pair.dutch;
+    const counterStr = typeof questionCounter === 'Number'
+      ? `(${questionCounter.join('/')}) `
+      : '';
+    const scoreStr = `Score: ${score.join('/')}`;
 
-    const question = `[English -> Dutch] ${qWord}\n`;
-    const res = await questionPromise(question);
+    const question = `${counterStr}${scoreStr}\n[${capitalize(fromLanguage)} -> ${capitalize(toLanguage)}] ${qWord}`;
+    const res = await inquirer.prompt([{
+      type: 'input',
+      message: question,
+      name: 'res'
+    }]).then(answers => answers.res);
 
     if (res.trim() === aWord) {
-      console.log(`Correct! ✅`);
+      console.log(`[✅ ] Correct! ${qWord} in ${capitalize(toLanguage)} is ${aWord}`);
       return true;
     } else {
-      console.log(`Incorrect! ❌ ${qWord} in Dutch is ${aWord}`);
+      console.log(`[❌ ] Incorrect! ${qWord} in ${capitalize(toLanguage)} is ${aWord}`);
       return false;
     }
   };
 
-  const dutchToEnglish = async () => {
-    const pair = choose(words);
-    const qWord = pair.dutch;
-    const aWord = pair.english;
+const endlessSet = [
+  normalQuestion('english', 'dutch'),
+  normalQuestion('dutch', 'english')
+];
 
-    const question = `[Dutch -> English] ${qWord}\n`;
-    const res = await questionPromise(question);
+const endlessMode = async () => {
+  let qCount = 0;
+  let score = 0;
+  while (true) {
+    const qProm = choose(endlessSet);
+    const gotQ = await qProm(words, [score, qCount++]);
+    if (gotQ) score++;
+  }
+};
 
-    if (res.trim() === aWord) {
-      console.log(`Correct! ✅`);
-      return true;
-    } else {
-      console.log(`Incorrect! ❌ ${qWord} in English is ${aWord}`);
-      return false;
-    }
-  };
+const setMode = async (setRange) => {
+  const SET_SIZE = setRange[1];
+  const qSet = words.slice(...setRange);
+  let score = 0;
 
-  return [
-    englishToDutch,
-    dutchToEnglish
-  ];
+  for (let i = 0; i < qSet.length; i++) {
+    const qProm = choose(endlessSet);
+    const gotQ = await qProm(qSet, [score, SET_SIZE], i+1);
+    if (gotQ) score++;
+  }
+}
+
+module.exports = {
+  endless: endlessMode,
+  set: setMode
 };

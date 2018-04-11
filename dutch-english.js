@@ -5,7 +5,7 @@ module.exports = [
   },
   {
     "dutch": "ik",
-    "english": "I"
+    "english": "i"
   },
   {
     "dutch": "zijn",
