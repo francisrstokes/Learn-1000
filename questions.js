@@ -1,5 +1,4 @@
-const removeAccents = require('remove-accents');
-const words = require('./dutch-english').map(pair => pair.map(removeAccents));
+const words = require('./dutch-english');
 const {choose} = require('./util');
 
 module.exports = rl => {
@@ -7,7 +6,10 @@ module.exports = rl => {
     new Promise(resolve => rl.question(q, resolve))
 
   const englishToDutch = async () => {
-    const [aWord, qWord] = choose(words);
+    const pair = choose(words);
+    const qWord = pair.english;
+    const aWord = pair.dutch;
+
     const question = `[English -> Dutch] ${qWord}\n`;
     const res = await questionPromise(question);
 
@@ -21,7 +23,10 @@ module.exports = rl => {
   };
 
   const dutchToEnglish = async () => {
-    const [qWord, aWord] = choose(words);
+    const pair = choose(words);
+    const qWord = pair.dutch;
+    const aWord = pair.english;
+
     const question = `[Dutch -> English] ${qWord}\n`;
     const res = await questionPromise(question);
 

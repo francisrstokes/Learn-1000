@@ -9,7 +9,5 @@
   "author": "Francis Stokes",
   "license": "ISC",
   "dependencies": {
-    "clear": "^0.1.0",
-    "remove-accents": "^0.4.2"
   }
 }

@@ -6,10 +6,9 @@ const rl = readline.createInterface({
 });
 const questions = require('./questions')(rl);
 
-
 (async () => {
   while (true) {
     const qProm = choose(questions);
     await qProm();
   }
-})()
+})();
