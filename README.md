@@ -56,3 +56,9 @@ node src
 ## Dependencies
 
 - \>= Node 7.6
+
+
+## Adapting for other languages
+
+This project can easily be made to work with other language pairs. In the `data` folder there is a json file with an array of 1000 objects, each with an `english` and a `dutch` key.
+The functions that generate questions can take `fromLanguage` and `toLanguage` parameters and can thus use any data structures that conform to this format.
