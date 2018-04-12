@@ -4,6 +4,33 @@ According to fluentu.com, you can be conversationally proficient in a language w
 The aim of this application is to make it easier to learn those most common 1000 words in Dutch by having you translate words randomly from
 English to Dutch or Dutch to English in a flashcard style.
 
+```
+? 📖  How do you want to learn? 📖 1000 Word Challenge
+? (1) Score: 0/1000 (0.0%)
+[English -> Dutch] as als
+✅  Correct!
+"as" in Dutch is "als"
+
+? (2) Score: 1/1000 (0.1%)
+[Dutch -> English] ik i
+✅  Correct!
+"ik" in English is "i"
+
+? (3) Score: 2/1000 (0.2%)
+[Dutch -> English] zijn be
+✅  Correct!
+"zijn" in English can be: "his", "are", "be"
+
+? (4) Score: 3/1000 (0.3%)
+[Dutch -> English] dat that
+✅  Correct!
+"dat" in English is "that"
+
+? (5) Score: 4/1000 (0.4%)
+[Dutch -> English] hij
+...
+```
+
 ## Modes
 
 ### Question Sets - Master groups of words
